@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <style>
+    body {
+      background-color: black;
+    }
+    .cell {
+      width: 150px;
+      height: 200px;
+      font-size: 100px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: black;
+      color: white;
+    }
+    .cell:hover {
+      background-color: #f8f9fa;
+      color: black;
+    }
+    .game-container {
+      margin-top: 50px;
+    }
+    #turn {
+      color: white;
+    }
+  
+  </style>   
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <!-- Left Column: Tic-Tac-Toe Game Board -->
+      <div class="col-md-6">
+        <h1 id="turn">X's Turn</h1>
+        <div class="row">
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+        </div>
+        <div class="row">
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+        </div>
+        <div class="row">
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+          <div class="cell col-4 border" onclick="makeMove(this)"></div>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="restartGame()">Restart Game</button>
+        
+      </div>
+      
+      
+
+     <!-- Right Column: Win Tracker -->
+<div class="col-md-6">
+    <div class="score-tracker mx-auto">
+      <h1 class="score-title">Score Tracker</h1>
+      <div class="player-section d-flex justify-content-between align-items-center">
+        <div class="player-info d-flex align-items-center">
+          <div class="player-name">X</div>
+          <div class="player-wins" id="wins-player1">0</div>
+          <button class="btn win-button" onclick="incrementWins('wins-player1')">+</button>
+        </div>
+        <div class="player-info d-flex align-items-center">
+          <div class="player-name">O</div>
+          <div class="player-wins" id="wins-player2">0</div>
+          <button class="btn win-button" onclick="incrementWins('wins-player2')">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- jQuery -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- JS Functions -->
+  <script src="Functions.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</body>
+</html>
+
+
+
+

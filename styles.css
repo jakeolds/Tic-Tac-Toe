@@ -1,0 +1,53 @@
+.score-tracker {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .score-title {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .player-section {
+    margin-top: 10px;
+  }
+  
+  .player-info {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .player-name {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .player-wins {
+    color: #fff;
+    font-size: 36px;
+    margin: 0 10px;
+  }
+  
+  .win-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .win-button:hover {
+    background-color: #555;
+  }
+  
+  .win-button:focus {
+    outline: none;
+  }
